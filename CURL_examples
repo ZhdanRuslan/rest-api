@@ -1,0 +1,5 @@
+curl -d "id=4&firstname=Ruslan" -X POST http://localhost:8000/people/4
+curl -d "id=5&firstname=Sasha" -X POST http://localhost:8000/people/5
+
+curl -d "id=4&firstname=Ruslan" -X DELETE http://localhost:8000/people/4
+curl -d "id=5&firstname=Sasha" -X DELETE http://localhost:8000/people/5
