@@ -24,11 +24,12 @@ func main() {
 
 
 
-//!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//!~~~display all~~~
 func GetPeople(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(people)
 }
 
+//!~~~display singe people~~~
 func GetPerson(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	for _, item := range people {
@@ -40,6 +41,7 @@ func GetPerson(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(&Person{})
 }
 
+//!~~~Create new People~~~
 func CreatePerson(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	var person Person
@@ -49,6 +51,7 @@ func CreatePerson(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(people)
 }
 
+//!~~~Delete People~~~
 func DeletePerson(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	for index, item := range people {
