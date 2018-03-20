@@ -1,2 +1,2 @@
 # rest-api
-rest-api
+rest-api. Simply CRUD operations.
