@@ -1,0 +1,17 @@
+rest-api
+/pkg/
+/.idea/
+/src/
+
+*.log
+
+*.pprof
+*.memprof
+
+*.txt
+
+*.pid
+/confdev/
+/conftest/
+/crmgo
+/crmgo.last.ini
